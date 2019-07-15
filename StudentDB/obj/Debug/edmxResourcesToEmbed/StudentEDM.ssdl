@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Student_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Students">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Courses" Type="nvarchar(max)" />
+    <Property Name="division" Type="nvarchar(max)" />
+    <Property Name="Score" Type="nvarchar(max)" />
+    <Property Name="Job" Type="nvarchar(max)" />
+    <Property Name="Graduation_Year" Type="int" />
+    <Property Name="Degree" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="Student_DBModelStoreContainer">
+    <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
